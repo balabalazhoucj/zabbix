@@ -1,14 +1,17 @@
-##获取docker基础信息
+##zabbix docker LLD
+
+| | |
+|--------|----------|
+|container_quantitis.sh|显示container和images|
+|docker-container.sh|构建container name json|
+|Running_containers_status.sh|显示container|
 
 
-#####获取当前主机中container name,以json的方式显示
 
-docker-container.sh 
-
-####获取container 状态
+####运行docker-container.sh
 
 ```
-container.sh status 'container id or name'
+docker-container.sh status 'container id or name'
 
 ＃sh docker-container.sh 
 {
@@ -38,9 +41,4 @@ container.sh status 'container id or name'
 }
 
 
-```
-####获取container硬盘使用空间
-
-```
-container.sh capacity 'conainer id or name'
 ```
